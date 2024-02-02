@@ -223,7 +223,7 @@ const hallsList = {
         {text:'West Lothian',alignment:"right" },
         {text:'United Kingdom',alignment:"right" }
       ],
-      UphallCom: [
+      Uphall: [
         {text:'Uphall Community Centre', alignment:"right" },
         {text:'Strathbrock Place',alignment:"right" },
         {text:'Uphall',alignment:"right" },

@@ -183,7 +183,7 @@ function App() {
     console.log(tempCounc)
 
     for (let i=0; i< tempCounc.length; i++){
-      council(letters[i],tempCounc[i], tempHall.text)
+      council(letters[i],tempCounc[i], tempHall.value)
     }
 
     feed.innerHTML = `Letters to Councillors have been written and are ready to print`
@@ -200,6 +200,17 @@ function App() {
     if (telNo.value.length > 1) doc.content[10] = {text:`Contact Number: ${telNo.value}`,alignment:"right" }
     else doc.content[10] = ''
     doc.content[11] = {text:`Dear Councillor ${councName},`}
+    switch(hallName){
+      case "EastWhitburn": hallName = "East Whitburn"
+      break;
+      case "MidCalder": hallName = "Mid Calder"
+      break;
+      case "UphallStation": hallName = "Uphall Station"
+      break;
+      case "WestCalder" : hallName = "West Calder"
+      break;
+      default: break;
+    }
     doc.content[13] = `As you will no doubt be aware our community centre in ${hallName} plays a vital role by providing a facility allowing a variety of groups and users to come together to meet the Council's objectives in this service area i.e. unders 5s, young people, the elderly and much more. Our centre offers a lifeline to many in our community.
     `
     let sigName = document.getElementById("sig")
@@ -263,7 +274,7 @@ function App() {
           <option value="Strathbrock">Strathbrock Community Centre</option>
           <option value="Torphichen">Torphichen Community Centre</option>
           <option value="UphallStation">Uphall Station Village Hall</option>
-          <option value="UphallCom">Uphall Community Centre</option>
+          <option value="Uphall">Uphall Community Centre</option>
           <option value="Winchburgh">Winchburgh Community Centre</option>
           <option value="WestCalder">West Calder Community Centre</option>
           <option value="Whitburn">Whitburn Community Centre</option>
