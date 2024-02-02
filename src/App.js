@@ -92,7 +92,7 @@ function App() {
   }
   let letter2 = {
     content: [
-      {text: 'Community Centre Budget Cuts 2025/26 to 2027/28', fontSize: 15, alignment:"centre" },
+      {text: 'Community Centre Budget Cuts 2025/26 to 2027/28', fontSize: 25, alignment:"centre" },
       ' ',
       {text:'Uphall Station Village Hall', alignment:"right" },
       {text:'14 Marrfield Terrace',alignment:"right" },
@@ -222,6 +222,7 @@ function App() {
 
   return (
     <div className="App">
+      <br/>
       <header>Letters against Community Centre Budget Cuts for 2025/26 to 2027/28</header>
       <p/>
       <div>
