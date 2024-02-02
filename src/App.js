@@ -92,7 +92,7 @@ function App() {
   }
   let letter2 = {
     content: [
-      {text: 'Community Centre Budget Cuts 2025/26 to 2027/28', fontSize: 25, alignment:"centre" },
+      {text: 'Community Centre Budget Cuts 2025/26 to 2027/28', fontSize: 15, alignment:"centre" },
       ' ',
       {text:'Uphall Station Village Hall', alignment:"right" },
       {text:'14 Marrfield Terrace',alignment:"right" },
@@ -223,7 +223,13 @@ function App() {
   return (
     <div className="App">
       <br/>
-      <header>Letters against Community Centre Budget Cuts for 2025/26 to 2027/28</header>
+      <h1>Letters against Community Centre Budget Cuts for 2025/26 to 2027/28</h1>
+      <p/>
+      This website is made to automatically generate letters to be sent to councillors 
+      from local wards. To use the site just enter the name of the Community Centre, the ward
+      of the Councillors and any additional details you wish to add such as name and telephone
+      number. It will then automatically generate pdfs of letters you can send to your local Councillors.
+      None of the information on this site is recorded or stored by us.
       <p/>
       <div>
         <label>Community Centre : </label>
