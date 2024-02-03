@@ -50,6 +50,8 @@ function App() {
       break;
       case "WestCalder" : hallName = "West Calder"
       break;
+      case "Chalmers" : hallName = "Linlithgow Bridge"
+      break;
       default: break;
     }
     doc.content[13] = `As you will no doubt be aware our community centre in ${hallName} plays a vital role by providing a facility allowing a variety of groups and users to come together to meet the Council's objectives in this service area i.e. unders 5s, young people, the elderly and much more. Our centre offers a lifeline to many in our community.
