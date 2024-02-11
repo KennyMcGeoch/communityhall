@@ -69,7 +69,7 @@ function App() {
       doc.content[18] = `As it has been eight months since this decision, and because the recently formed Steering Group have been left disappointed in the lack of forthcoming information from the Council which they could then relay to Management Committees I would like to ask the following questions:`
     }
     
-    pdfMake.createPdf(doc).download()
+    pdfMake.createPdf(doc).download(hallName + " " + councName)
   }
 
   
